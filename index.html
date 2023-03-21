@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarish Yousaf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Montserrat:ital,wght@0,300;0,500;1,300;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive-styles.css">
+    <link rel="stylesheet" href="./modal-styles.css">
+    <script src="./script.js" defer></script>
+    <script src="./modal-script.js" defer></script>
+    <script src="./particles.min.js" defer></script>
+    <script src="./particles.script.js" defer></script>
+    <link rel="stylesheet" href="./particles.styles.css">
+</head>l
+<body class="body dark-mode">
+    <div class="body-overlay"></div>
+    <div id="particles-js"></div>
+
+    <div class="modal-wrap" id="welcome-modal">
+        <div class="modal-main">
+            <h1 class="modal-title">Hey there, welcome!</h1>
+            <div class="modal-screen">
+                <p class="alert warning">This website is made from scratch.</p>
+                <h2 class="modal-subtitle">No CSS framework, no JavaScript library for UI.</h2>
+                <p class="modal-desc">Everything including stying, functionality, micro-animations, etc. It is all custom written.</p>
+                <p class="modal-desc">Please take your time exploring the site. If you have any suggestions or questions, feel free to contact me.</p>
+                <h2 class="modal-subtitle">There's also a chatbot.</h2>
+                <p class="modal-desc">I have made a little chatbot that can do some basic conversation. Go ahead and try it. :)</p>
+            </div>
+
+
+            <form class="modal-buttons">
+                <div class="checkbox-wrap">
+                    <input type="checkbox" style="margin-right: 5px; height: 22px; width: 22px;" />
+                    <span>Don't show again</span>
+                </div>
+                <button class="modal-button">Ok</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Commented toaster because the markup will added by JS -->
+    <!-- <div class="toaster-wrap">
+        <div class="toaster-notification">Hey this is a toaster notification.</div>
+    </div> -->
+    <button class="sidebar-toggle-button">
+        <i class="fa fa-bars"></i>
+    </button>
+    <div class="body__background">
+        <div class="body__background__stripe">
+            <button class="sidebar-close-button">
+                <i class="fa fa-times"></i>
+            </button>
+            <div class="body__background__stripe__text">
+                <div class="theme-switcher-wrap">
+                    <button class="theme-switcher-button">
+                        <div class="theme-switcher-button-tooltip">Change theme</div>
+                    </button>
+                </div>
+                <h2 class="body__background__stripe__text_heading">Zarish yousaf</h2>
+                <h3 class="body__background__stripe__text_subheading">SQA Engineer & Graphic Designer </h3>
+                <a href="mailto:zarishyousaf4@gmail.com" class="button outlined"><i class="fa fa-envelope"></i>CONTACT ME</a>
+                <a href="#" class="button outlined" target="_blank"><i class="fa fa-download"></i>Download CV</a>
+                <button class="reset-choices" title="Resets the page to its initial state">Reset my choices</button>
+            </div>
+        </div>
+    </div>
+    <main class="main">
+        <div class="main-left">
+            <div class="user-image-wrap">
+                <img class="user-image" src="assets/images/zarishyousaf.png"/>
+            </div>
+            <div class="navigation-wrap">
+                <div class="navigation-wrap-info-tip">
+                    <span>Use these navigation buttons to open appropriate section on the right.</span>
+                    <form>
+                        <div class="checkbox-wrap">
+                            <input type="checkbox"/>
+                            <span>Don't show again</span>
+                        </div>
+                        <button class="tooltip-button button primary">Got it</button>
+                    </form>
+                </div>
+                <h2 class="navigation-title">Navigation</h2>
+                <button class="navigation-button" data-toggle-section="about">About</button>
+                <button class="navigation-button" data-toggle-section="contact">Contact</button>
+                <button class="navigation-button" data-toggle-section="technical-skills">Technical skills</button>
+                <button class="navigation-button" data-toggle-section="additional-skills">Additional skills</button>
+                <button class="navigation-button" data-toggle-section="experience">Experience</button>
+                <button class="navigation-button" data-toggle-section="projects">Portfolio</button>
+                <button class="navigation-button" data-toggle-section="certifications">Certifications</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="main-right">
+            <div class="username-wrap">
+                <h1 class="username">Zarish Yousaf</h1>
+            </div>
+            <section id="about" class="section">
+                
+                <h3 class="section-title">SUMMARY</h3>
+                <p class="summary">
+                    I am an experienced software engineer with 5 years experience in SQA engineering and 2+ years experience in graphic designing, I have honed my skills in ensuring quality assurance and creating visually stunning designs. I am dedicated to delivering exceptional results and contributing to the success of any project I am a part of.  I am  Passionate to learn new things to make my skills stronger.
+                </p>
+                <h3 class="section-title">Education</h3>
+
+                <h4 class="education-title">
+                    <span class="education-place">University Of Sargodha</span>
+                    <span class="education-date">2014 - 2018</span>
+                </h4>
+                <p class="education">Bachelors of science in Software Engineering</p>
+
+                <h4 class="education-title">
+                    <span class="education-place">BISE Gujranwala</span>
+                    <span class="education-date">2012 - 2014</span>
+                </h4>
+                <p class="education">FSC (Pre-Engineering)</p>
+                
+                <h4 class="education-title">
+                    <span class="education-place">BISE Gujranwala</span>
+                    <span class="education-date">2011 - 2012</span>
+                </h4>
+                <p class="education">Matric (Biology)</p>
+
+                <h3 class="section-title">Languages</h3>
+                <div class="language-wrap">
+                    <p class="language">English (Intermediate / Conversational)</p>
+                </div>
+                <div class="language-wrap">
+                    <p class="language">Urdu (Native)</p>
+                </div>
+            </section>
+            <section id="contact" class="section">
+                <h3 class="section-title">Residence</h3>
+                <h4 class="contact-title">Dubai, United Arab Emirates</h4>
+                <h4 class="contact-title">Lahore, Pakistan</h4>
+
+                <h3 class="section-title">Personal contact</h3>
+                <div class="contact-wrap">
+                    <h4 class="contact-title">Phone number</h4>
+                    <a class="contact-link" href="tel:03174429967">You can contact me on my Email</a>
+                    <a class="contact-link" href="tel:03238404499">-</a>
+                </div>
+                <div class="contact-wrap">
+                    <h4 class="contact-title">Email</h4>
+                    <a class="contact-link" href="mailto:zarishyousaf4@gmail.com">zarishyousaf4@gmail.com</a>
+                </div>
+                <h3 class="section-title">Social links</h3>
+                <div class="contact-wrap">
+                    <h4 class="contact-title">LinkedIn</h4>
+                    <a class="contact-link" href="https://www.linkedin.com/in/zarish-yousaf-998512175/" target="_blank">https://www.linkedin.com/in/zarish-yousaf-998512175/</a>
+                </div>
+                <div class="contact-wrap">
+                    <h4 class="contact-title">Behance</h4>
+                    <a class="contact-link" href="https://www.behance.net/zarishyousaf" target="_blank">https://www.behance.net/zarishyousaf</a>
+                </div>
+                <div class="contact-wrap">
+                    <h4 class="contact-title">Twitter</h4>
+                    <a class="contact-link" href="https://twitter.com/zariii45" target="_blank">https://twitter.com/zariii45</a>
+                </div>
+            </section>
+            <section id="technical-skills" class="section skills-section">
+                <div class="skills-section-help-wrap">
+                    <div class="skills-section-help">
+                        <h3>These are expandable items.</h3>
+                        <p>Click the skill to expand it.<br/>Additional information can be found inside it.</p>
+                        <form>
+                            <div class="checkbox-wrap">
+                                <input type="checkbox"/>
+                                <span>Don't show again</span>
+                            </div>
+                            <button class="button primary">Got it</button>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="expandable-wrap">
+                    <button class="expandable-button">
+                        <h3 class="skill-title"> Software Quality Assurance</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="expandable">
+                        <h4 class="subskill-title">Manual Testing</h4>
+                        <p class="skill-description">Task to do manual testing of different Mobile and Web Applications.</p>
+                        <h4 class="subskill-title">Cross Browser Testing </h4>
+                        <p class="skill-description">Tested projects on different browsers versions and different Android, IOS versions </p>
+                        <h4 class="subskill-title">Api Testing</h4>
+                        <p class="skill-description">I have Experience to work with Postman for Api Testing  </p>
+                        <h4 class="subskill-title"> Performance / Load  Testing</h4>
+                        <p class="skill-description">I have Worked on load testing for several projects by using Jmeter </p>
+                        <h4 class="subskill-title"> Smoke / Sanity  Testing</h4>
+                        <p class="skill-description">I have tested many in house & outsourced Web, Mobile App projects & have performed Smoke , Sanity , regression Testing on them. </p>
+                    </div>
+                </div>
+
+
+                <div class="expandable-wrap">
+                    <button class="expandable-button">
+                        <h3 class="skill-title">Documentation Work</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="expandable">
+
+                        <h4 class="subskill-title">Software Requirement Specification Documentation</h4>
+                        <p class="skill-description">I have collaborated with multiple clients & have made SRS document for them.</p>
+
+                        <h4 class="subskill-title">Google / Excel Sheets </h4>
+                        <p class="skill-description">I Have prepared multiple Bug Sheets , workflows , High level senarios , Test casesProper documents for clients.</p>
+                        
+                        <h4 class="subskill-title">Visual Paradigm for UML Enterprise Edit Documentation</h4>
+                        <p class="skill-description">I have prepared UML Diagrams , ERD , Class diagram , for clients.</p>
+
+                    </div>
+                </div>
+
+
+                <div class="expandable-wrap">
+                    <button class="expandable-button">
+                        <h3 class="skill-title">Automation Testing </h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="expandable">
+                        <h4 class="subskill-title">Cypress</h4>
+                        <p class="skill-description">I have worked with cypress on multiple projects.</p>
+
+                        <h4 class="subskill-title">Selenium</h4>
+                        <p class="skill-description">I have basic level experience in selenium have worked with python on 1 or 2 projects.</p>
+
+                    </div>
+                </div>
+
+
+                <div class="expandable-wrap">
+                    <button class="expandable-button">
+                        <h3 class="skill-title">Hands on Tools</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="expandable">
+                        <h4 class="subskill-title">Basics</h4>
+                        <p class="skill-description">I have excellent grip in the following:</p>
+                        <ul class="skill-list">
+                            <li>Jmeter</li>
+                            <li>Lambda Test</li>
+                            <li>Browser Stack</li>
+                            <li>Nox  </li>
+                            <li>GenyMotion</li>
+                            <li>Excel , Google Sheets</li>
+                            <li>Cypress</li>
+                            <li>Selenium</li>
+                            <li>Postman</li>
+                            <li>Manual Testing </li>
+                        </ul>
+                        <h4 class="subskill-title">Advanced</h4>
+                        <p class="skill-description">I also have a strong experience on following tools :</p>
+                        <ul class="skill-list">
+                            <li>Jira</li>
+                            <li>Trello</li>
+                            <li>Azure Devops</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="expandable-wrap">
+                    <button class="expandable-button">
+                        <h3 class="skill-title">Roles & Responsibilities </h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="expandable">
+                        <p class="skill-description">I have following extpertise: </p>
+                        <ul class="skill-list">
+                            <li>Task to do manual testing of different Mobile and Web  Applications </li>
+                            <li>Have Experience to work with Postman for API Testing</li>
+                            <li>Tested projects on different browsers versions and different Android, IOS versions </li>
+                            <li>Worked on load testing for several projects by using Jmeter</li>
+                            <li>A creative mindset and the ability to approach a problem creatively. Good communications skills, both written and verbal. Strong IT skills</li>
+                            <li>A meticulous approach to work. Ability to use logic and reasoning to identify the strengths and weaknesses of IT systems</li>
+                            <li>worked with full system development lifecycle experience, including designing, developing and implementing test plans, test cases and test processes</li>
+                            <li>Worked on Jira & devops platform by using agile methodologies </li>
+                            <li>Responsible for doing scrum meetings with team</li>
+                            <li>Communicate with clients to gain an understanding of what they want their proposed communications to look like.</li>
+                            <li>Create SRS document and note down the relevant requirements.</li>
+                            <li>Produce drafts for review by clients and make revisions based on the feedback received</li>
+                            <li>Responsible for creating complete test cycles , sprint planning’s & Manage daily task activities </li>
+                            <li>Extract complete test reports at the end of each sprint and let the client know our team progress</li>
+                            <li>Tested many in house & outsourced projects.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="expandable-wrap">
+                    <button class="expandable-button">
+                        <h3 class="skill-title">Google / Bug Sheets links</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="expandable">
+                        <p class="skill-description">Following are the links:</p>
+                     
+                       
+                       
+                       
+                        <ul class="skill-list">
+                            <li>The Movement</li>
+                                <a  href="https://docs.google.com/spreadsheets/d/1zrcLC0B5rkK_4qwEN1U93zBYQbP4dkfwiXFnN1Wbu8Q/edit?usp=sharing"class="link">https://docs.google.com/spreadsheets/d/1zrcLC0B5rkK_4qwEN1U93zBYQbP4dkfwiXFnN1Wbu8Q/edit?usp=sharing</a>
+                           
+                           <li>ManageX</li>
+                            <a href="https://docs.google.com/spreadsheets/d/1yMhFtZRhrl6-a8RSnLOwR8Z4GSocOr-_eGdAKRM4JG0/edit#gid=0" class="link">https://docs.google.com/spreadsheets/d/1yMhFtZRhrl6-a8RSnLOwR8Z4GSocOr-_eGdAKRM4JG0/edit#gid=0</a>
+
+                            <li>Circus Bus</li>
+                            <a href="https://docs.google.com/spreadsheets/d/1hvyd0Id0tqTGRnw_Yf0c4060vX0jTNQub2CNkmxlf7w/edit?usp=sharing" class="link">https://docs.google.com/spreadsheets/d/1hvyd0Id0tqTGRnw_Yf0c4060vX0jTNQub2CNkmxlf7w/edit?usp=sharing</a>
+                            
+                            <li>Rental Management System</li>
+                            <a href="https://docs.google.com/spreadsheets/d/1_iz68f7yDvSRnTS7GdylVQ14yZN7qBJJXYK0koLisdU/edit?usp=sharing" class="link"> https://docs.google.com/spreadsheets/d/1_iz68f7yDvSRnTS7GdylVQ14yZN7qBJJXYK0koLisdU/edit?usp=sharing</a>
+
+                            <li>Kara App</li>
+                            <a href="https://docs.google.com/spreadsheets/d/1woVk2JO3acEUIjFmSikVi12OsCzMmshpkaDz5TsmWoc/edit?usp=sharing" class="link">https://docs.google.com/spreadsheets/d/1woVk2JO3acEUIjFmSikVi12OsCzMmshpkaDz5TsmWoc/edit?usp=sharing</a>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- <div class="expandable-wrap">
+                    <button class="expandable-button">
+                        <h3 class="skill-title">GIT</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="expandable">
+                        <h4 class="subskill-title">Version control</h4>
+                        <p class="skill-description">I use git as a version control and collaborate with other developers.</p>
+                        <h4 class="subskill-title">Git CLI</h4>
+                        <p class="skill-description">I have experience using git commands to to perform most common actions.</p>
+                    </div>
+                </div>
+
+
+                <div class="expandable-wrap">
+                    <button class="expandable-button">
+                        <h3 class="skill-title">Firebase</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="expandable">
+                        <h4 class="subskill-title">Auth</h4>
+                        <p class="skill-description">I have hands on experience in using firebase as an authentication platform to allow only valid users to sign into the application.</p>
+                        <h4 class="subskill-title">Firestore</h4>
+                        <p class="skill-description">I also have experience in using firestore as a database for storing user's information.</p>
+                    </div>
+                </div> -->
+
+
+
+                
+                
+                
+                
+                
+            </section>
+            <section id="additional-skills" class="section skills-section">
+                <div class="skills-section-help-wrap">
+                    <div class="skills-section-help">
+                        <h3>These are expandable items.</h3>
+                        <p>Click the skill to expand it.<br/>Additional information can be found inside it.</p>
+                        <form>
+                            <div class="checkbox-wrap">
+                                <input type="checkbox"/>
+                                <span>Don't show again</span>
+                            </div>
+                            <button class="button primary">Got it</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="expandable-wrap">
+                    <button class="expandable-button">
+                        <h3 class="skill-title">Graphic Design skills</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="expandable">
+                        <h4 class="subskill-title">Custom Dashboards Designs</h4>
+                        <p class="skill-description">I have experience in making custom Dashboards (admin , client panels both) for web. I use different colors, fonts and other properties so they can be changed and customized with ease</p>
+                        <h4 class="subskill-title">Attention to detail</h4>
+                        <p class="skill-description">I pay attention to the following things and make sure that most people can benefit from the product/service designs:</p>
+                        <ul class="skill-list">
+                            <li>Responsiveness</li>
+                            <li>accessibility</li>
+                            <li>compatibility</li>
+                        </ul>
+                        <h4 class="subskill-title">Adobe CC</h4>
+                        <p class="skill-description">I have experience working with the following Adobe products:</p>
+                        <ul class="skill-list">
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>Animate</li>
+                            <li>After Effects</li>
+                            <li>Indesign</li>
+                            <li>Figma</li>
+                            <li>Adobe XD</li>
+                        </ul>
+                        <h4 class="subskill-title"> Landing Pages </h4>
+                        <p class="skill-description">I have experience in making custom Landing Pages for web. I use different colors, fonts and other properties so they can be changed and customized. </p>
+                        <h4 class="subskill-title"> Illustration & Logo designing </h4>
+                        <p class="skill-description">I have experience in making 3D Logo designs & doing all kind of illustration work. I have created multiple logos , brouchers , flyers , social marketing designs.</p>
+                        <h4 class="subskill-title"> Advertisement & Branding </h4>
+                        <p class="skill-description">I have experience in making Advertisement designs & branding of projects.</p>
+                    </div>
+                </div>
+                <div class="expandable-wrap">
+                    <button class="expandable-button">
+                        <h3 class="skill-title">Hands On Tools</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="expandable">
+                        <p class="skill-description">I have strong grip on following tools:</p>
+                        <ul class="skill-list">
+                            <li>Figma</li>
+                            <li>Adobe XD</li>
+                            <li>Adobe Illustrator</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Adobe After Effects</li>
+                            <li>Coral Draw</li>
+                            <li>Adobe Indesign</li>
+                            <li> Canva </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="expandable-wrap">
+                    <button class="expandable-button">
+                        <h3 class="skill-title">Roles & Responsibilities</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="expandable">
+                        <p class="skill-description">I have strong grip on following tools:</p>
+                        <ul class="skill-list">
+                            <li>worked with full system development lifecycle experience, including designing, developing, and implementing test plans and test processes</li>
+                            <li>Responsible for designing the UI /UX for Android and IOS-based applications</li>
+                            <li>Designed web pages, brochures, logos, signs, books, magazine covers, annual reports, advertisements, and other communication materials.</li>
+                            <li>Produced both eCommerce and simple website layouts design for clients.</li>
+                            <li>Meet with clients to gain an understanding of what they want their proposed communications to look like. Create or incorporate illustrations, pictures, and designs to reflect the desired theme and tone of the communications.</li>
+                            <li>Produce drafts for review by clients and make revisions based on the feedback received</li>
+                            <li>Responsible for the entire process of defining requirements, visualizing, and creating graphics including illustrations, logos, layouts, and photos.</li>
+                            <li>Successfully managed and coordinate graphic design projects from concept through completion. Worked closely with clients to create visions, conceive designs, and consistently meet deadlines and requirements.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="expandable-wrap">
+                    <button class="expandable-button">
+                        <h3 class="skill-title">Personal Skills</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                <div class="expandable">
+                    <p class="skill-description">I have strong grip on following skills:</p>
+                    <ul class="skill-list">
+                        <li>Excellent communication skills</li>
+                        <li>Strong interpersonal skills </li>
+                        <li>Creative spirit</li>
+                        <li>Creative spirit</li>
+                        <li>Time management</li>
+                        <li>Team player</li>
+                        <li>Fast learner</li>
+                        <li> Motivated </li>
+                    </ul>
+                </div>
+            </div>
+
+            </section>
+            <section id="experience" class="section">
+                <h3 class="section-title">Experience</h3>
+
+                <h4 class="title">Graphic Designer / UI UX  Engineer </h4>
+                <span class="subtitle">VaporVM | 2021 to present</span>
+                <a href="https://vaporvm.com/" class="link">https://vaporvm.com/</a>
+                <p class="desc">I am working here as a senior Graphic Designer & UI/UX Engineer </p>
+                <p class="desc">Below are My Graphic  Designer Skills:</p>
+                <ul class="list">
+                    <li>UI UX Designs for websites & Apps</li>
+                    <li>Social Media Posts , 3D Logo Designs  </li>
+                    <li>Brouchers , Flyers, Poster designing</li>
+                    <li> Adobe Illustrator & All kind of illustration work</li>
+                    <li> Adobe Photoshop</li>
+                    <li> Adobe After Effects</li>
+                    <li> Animated Videos</li>
+                    <li> Typography </li>
+                    <li> Advertisements</li>
+                    <li> Adobe Lightroom</li>
+                    <li>Adobe XD, Figma</li>
+                </ul>
+
+
+                <h4 class="title">Software Quality Assurance Engineer</h4>
+                <span class="subtitle">VaporVM | 2021 to present</span>
+                <a href="https://vaporvm.com/" class="link">https://vaporvm.com/</a>
+                <p class="desc">I am working here as a senior SQA Engineer Gather all requirements from clients work with full system development lifecycle experience,  including designing, developing and implementing test plans, test cases and test processes</p>
+                <p class="desc">Below are some interesting things that I am working on:</p>
+                <ul class="list">
+                    <li>Jira</li>
+                    <li>Azure Devops</li>
+                    <li>Selenium</li>
+                    <li>Cypress</li>
+                    <li> Manual Web,APP Testing</li>
+                    <li>Performance , Load Testing </li>
+                    <li>All kind of functional , non functional testing</li>
+                </ul>
+
+                <h4 class="title">Software Quality Assurance Engineer</h4>
+                <span class="subtitle">senarios | 2019 to 2021</span>
+                <a href="https://senarios.co/" class="link">https://senarios.co/</a>
+                <p class="desc">I have worked here with a role of an sqa engineer & have done testing on multiple websites Plus mobile applications ( android / IOS).</p>
+                <p class="desc">I worked on the following things:</p>
+                <ul class="list">
+                    <li>Web Testing</li>
+                    <li>App Testing</li>
+                    <li>Cross browser Testing</li>
+                    <li>Task Management</li>
+                    <li>Creating Bug Reports</li>
+                    <li>Giving demo to clients</li>
+                    <li>Complete Documentation work</li>
+                    <li>Created TestCases, Test Senarios , User Stories, High level Senarios , workflows</li>
+                </ul>
+            </section>
+               
+            </section>
+            <section id="projects" class="section">
+                <div class="expandable-wrap">
+                    <button class="expandable-button">
+                        <h3 class="skill-title">Graphic Design Portfolio</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="expandable">
+                        <h4 class="subskill-title">Behance</h4>
+                        <p class="skill-description">You can check my portfolio from behance or can go through my website for more details.</p>
+                        <a href="https://www.behance.net/zarishyousaf" class="link">https://www.behance.net/zarishyousaf</a>
+                        <h4 class="subskill-title">linkedin</h4>
+                        <p class="skill-description">You can go through my linkedin profile & Page:</p>
+                        <a href="https://www.linkedin.com/in/zarish-yousaf-998512175/" class="link">https://www.linkedin.com/in/zarish-yousaf-998512175/</a>    
+                </div>
+    
+                <div class="expandable-wrap">
+                    <button class="expandable-button">
+                        <h3 class="skill-title">Software Quality Assurance Portfolio</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="expandable">
+                        <h4 class="subskill-title">PDF Portfolio </h4>
+                        <p class="skill-description">You can check my portfolio from here or can go through my website for more details.</p>
+                        <a href="https://drive.google.com/drive/folders/1xFL9oeLJU8k5bPNW4mZK8URsA4MC4HD4?usp=sharing" class="link">https://drive.google.com/drive/folders/1xFL9oeLJU8k5bPNW4mZK8URsA4MC4HD4?usp=sharing</a>
+                        
+                    </div>
+                </div>
+                <div class="expandable-wrap">
+                    <button class="expandable-button">
+                        <h3 class="skill-title">My Website</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="expandable">
+                        <h4 class="subskill-title">Website Link</h4>
+                        <p class="skill-description">You can check my portfolio from here or can go through my website for more details.</p>
+                        <a href="https://iamzarii.com/" class="link">https://iamzarii.com/</a>
+                        
+                    </div>
+                </div>
+    
+               
+            </section>
+            <section id="certifications" class="section">
+                <div class="expandable-wrap">
+                    <button class="expandable-button">
+                        <h3 class="skill-title">Graphic Design certifications</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="expandable">
+                        <h4 class="subskill-title">LWE Advance Graphic Design Certificate</h4>
+                        <p class="skill-description">This certificate was about advance learning in illustration , logo , typography , stationary designs .</p>
+                       
+                        <h4 class="subskill-title">linkedin</h4>
+                        <p class="skill-description">You can go through my linkedin profile & Page:</p>
+                        <a href="https://www.linkedin.com/in/zarish-yousaf-998512175/" class="link">https://www.linkedin.com/in/zarish-yousaf-998512175/</a>    
+                </div>
+
+                <div class="expandable-wrap">
+                    <button class="expandable-button">
+                        <h3 class="skill-title">Software Quality Assurance Certifications</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="expandable">
+                        <h4 class="subskill-title">Sig Sigma Yellow Belt </h4>
+                        <p class="skill-description">Six Sigma Yellow Belt is someone who has been trained to problem solve process problems at a more localized level. They generally operate on project teams supporting Green belt and Black Belts in their project delivering.</p>
+                        <a href="https://www.linkedin.com/posts/zarish-yousaf-998512175_sixsigma-sixsigmacertification-sixsigmayellowbelt-activity-6950053046647173121-hvP6?utm_source=share&utm_medium=member_desktop" class="link">https://www.linkedin.com/posts/zarish-yousaf-998512175_sixsigma-sixsigmacertification-sixsigmayellowbelt-activity-6950053046647173121-hvP6?utm_source=share&utm_medium=member_desktop</a>
+                        
+                        <h4 class="subskill-title">Sig Sigma Green Belt </h4>
+                        <p class="skill-description">𝑻𝒉𝒊𝒔 𝒄𝒐𝒖𝒓𝒔𝒆 𝒘𝒂𝒔 𝒓𝒆𝒈𝒂𝒓𝒅𝒊𝒏𝒈 𝑺𝒊𝒙 𝒔𝒊𝒈𝒎𝒂 " 𝑮𝒓𝒆𝒆𝒏 𝑩𝒆𝒍𝒕 " 𝒘𝒉𝒐 𝒐𝒑𝒆𝒓𝒂𝒕𝒆𝒔 𝒊𝒏 𝒔𝒖𝒑𝒑𝒐𝒓𝒕 𝒐𝒇 𝒐𝒓 𝒖𝒏𝒅𝒆𝒓 𝒕𝒉𝒆 𝒔𝒖𝒑𝒆𝒓𝒗𝒊𝒔𝒊𝒐𝒏 𝒐𝒇 𝒂 𝑺𝒊𝒙 𝑺𝒊𝒈𝒎𝒂 𝑩𝒍𝒂𝒄𝒌 𝑩𝒆𝒍𝒕..</p>
+                        <a href="https://www.linkedin.com/posts/zarish-yousaf-998512175_zarish-yousaf-has-successfully-completed-activity-6953013144344502272-ZOdG?utm_source=share&utm_medium=member_desktop" class="link">https://www.linkedin.com/posts/zarish-yousaf-998512175_zarish-yousaf-has-successfully-completed-activity-6953013144344502272-ZOdG?utm_source=share&utm_medium=member_desktop</a>
+                        
+                    </div>
+                </div>
+               
+            </section>
+           
+        </div>
+
+    </div>
+
+    </main>
+    <div class="message-wrap">
+        <button class="sender-wrap">
+            <img src="assets/images/zarishyousaf.png" class="sender-image" alt="">
+            <span class="sender-name">Zarish Yousaf</span>
+            <i class="fa fa-comment message-icon"></i>
+            <i class="fa fa-chevron-up dropdown-indicator"></i>
+        </button>
+        <div class="message-expandable">
+            <div class="message-wrap__messages">
+                
+            </div>
+            <form class="message-wrap__replies">
+                <button class="message-wrap__reply">Hello</button>
+                <button class="message-wrap__reply">Greetings!</button>
+            </form>
+            <form class="message-wrap__input-wrap">
+                <input type="text" placeholder="Type here and hit enter"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

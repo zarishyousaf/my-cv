@@ -1,0 +1,87 @@
+@media screen and (max-width: 1200px) {
+    .body{
+        padding: 30px 50px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sidebar-toggle-button, .sidebar-close-button{
+        display: flex;
+    }
+    .body{
+        padding: 30px 20px;
+        padding-top: 50px;
+    }
+    .body__background{
+        z-index: 9999;
+        width: 100%;
+        max-width: 300px;
+        transform: translateX(-100%);
+        visibility: hidden;
+        transition: transform 225ms 0ms, visibility 0ms 225ms;
+    }
+    .body__background.active{
+        transform: translateX(0%);
+        visibility: visible;
+        transition: transform 225ms 225ms, visibility 0ms 0ms;
+    }
+    .body__background__stripe{
+        height: 100%;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .main{
+        margin-inline: auto;
+    }
+}
+
+
+@media screen and (max-width: 573px){
+    .main-right{
+        padding-inline: 10px;
+    }
+    .navigation-wrap{
+        padding: 5px;
+    }
+    .message-wrap{
+        width: 250px;
+    }
+    .message-wrap__messages{
+        height: 30vh;
+    }
+    .sender-wrap{
+        padding: 0.5rem 0.5rem;
+        font-size: 1rem;
+    }
+    .message-wrap__messages{
+        font-size: 1rem;
+    }
+    .message-wrap__reply{
+        font-size: 1rem;
+    }
+    .sender-wrap:not(.button--active){
+        position: absolute;
+        bottom: 100%;
+        right: 0px;
+        background-color: var(--background-color);
+        width: auto;
+        box-shadow: 0px 0px 20px #0005;
+        border-radius: 50%;
+    }
+    .sender-wrap:not(.button--active) .sender-name,
+    .sender-wrap:not(.button--active) .dropdown-indicator{
+        display: none;
+    }
+    .sender-wrap:not(.button--active) .message-icon{
+        display: block;
+    }
+
+
+
+    .navigation-wrap-info-tip,
+    .skills-section-help{
+        font-size: 8px;
+    }
+    
+}
